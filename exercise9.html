@@ -1,0 +1,47 @@
+<!--EXERCISE9-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 onclick="this.innerHTML='oops!'"> click on this text</h1>
+    <p onclick="text(this)"> click on this text</p>
+    <button onclick="displayDate( )">try it</button>
+    <p id="intro">Finding html by id</p>
+    <p id="demo"></p>
+    <p> this example demonstrates the getElementByTagname</p>
+    <p id="demo1"></p>
+    <p class="cls">hello world</p>
+    <p class="cls"> this example demonstrates getElementsByClassName</p>
+    <p id="demo2"></p>
+    <p></p>
+
+
+
+    <script>
+        const element = document.getElementById("intro");
+        document.getElementById("demo").innerHTML = "the text from the intro paragraph" + element.innerHTML;
+
+        const people = document.getElementsByTagName("p");
+        document.getElementById("demo1").innerHTML = "the text is " + people.innerHTML;
+
+        const x = document.getElementsByClassName("intro");
+        document.getElementById("demo2").innerHTML = "this first paragraph with cls intro" + x.innerHTML;
+
+        const y = document.querySelectorAll("p.intro");
+        document.getElementById("demo2").innerHTML = "this first paragraph with cls intro" + y.innerHTML;
+        function text(id) {
+            id.innerHTML = "oops!"
+        }
+        document.getElementById("myBtn").onclick = displayDate;
+    </script>
+</body>
+
+</html>

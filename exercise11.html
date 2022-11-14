@@ -1,0 +1,101 @@
+<!--EXECISE11-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function validate() {
+            let uname = document.getElementById("username").value;
+            if (uname == "") {
+
+                alert("this page is blank");
+                return false;
+            }
+            let uid = document.getElementById("userid").value;
+            if (uid == "") {
+                alert("this page is blank");
+                return false;
+            }
+            let num = document.getElementById("number").value;
+            if (num == "") {
+                alert("this page is blank");
+                return false;
+            }
+            let address = document.getElementById("adress").value;
+            if (adress = "") {
+                alert("this page is blank");
+                return false;
+            }
+            let date = document.getElementById("date").value;
+            if (date = "") {
+                alert("this page is blank");
+                return false;
+            }
+            let gender = document.getElementById("gender").value;
+            if (gender = "male") {
+                return false;
+            }
+            else {
+                return true;
+            }
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <form action="success.html" onsubmit="return validate()">
+
+
+
+        <font color="white"> first name</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"
+            name=" " id="username">
+        <label for="" style="color: white ;visibility:visible;">(max of 50 characters)</label>
+        <br> <br>
+        <font color="white"> last name</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+            type="text" name="" id="username">
+        <label for="" style="color: white ;visibility:visible;">(max of 50 characters)</label>
+        <br>
+        <br>
+        <font color="white"> email id</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input
+            type="text" name="" id="userid">
+        <br> <br>
+        <font color="white"> mobile num</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="number ">
+        <label for="" style="color: white ;visibility:visible;">(max of 10 digits)</label>
+        <br><br>
+        <font color="white">gender</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <font color="white">male</font><input type="radio" name="gender" id="male">
+        <font color="white">female</font> <input type="radio" name="gender" id="female">
+        <br> <br>
+        <font color="white">Date of birth</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="" id="date">
+        <br> <br>
+        <font color="white">adress</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <textarea name=""
+            id="adress" cols="20" rows="7"></textarea>
+
+        <br><br>
+
+        <font color="white">city</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name=""
+            id="username">
+        <label for="" style="color: white ;visibility:visible;">(max of 50 characters)</label>
+        <br> <br>
+        <font color="white">pin code</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="number">
+        <label for="" style="color: white ;visibility:visible;">(max 6 numbers are allowed)</label>
+        <br> <br>
+
+        <font color="white">submit</font> <input type="submit" value="submit">
+    </form>
+
+
+
+
+</body>
+
+</html>
